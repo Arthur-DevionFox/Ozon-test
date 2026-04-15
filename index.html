@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Progress</title>
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+  <div class="app">
+ 
+    <section class="progress-section">
+      <span class="label">Progress</span>
+      <div class="progress-block" id="progressBlock">
+        <svg class="progress-ring" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+          <circle class="progress-ring__track" cx="60" cy="60" r="46"/>
+          <circle class="progress-ring__arc"   cx="60" cy="60" r="46"/>
+        </svg>
+      </div>
+    </section>
+ 
+    <section class="controls-section">
+      <div class="control-row">
+        <input
+          class="value-input"
+          id="valueInput"
+          type="number"
+          min="0"
+          max="100"
+          value="0"
+        />
+        <span class="control-label">Value</span>
+      </div>
+ 
+      <div class="control-row">
+        <label class="toggle" id="animateToggle">
+          <input class="toggle__input" type="checkbox" id="animateCheck"/>
+          <span class="toggle__track">
+            <span class="toggle__thumb"></span>
+          </span>
+        </label>
+        <span class="control-label">Animate</span>
+      </div>
+ 
+      <div class="control-row">
+        <label class="toggle" id="hideToggle">
+          <input class="toggle__input" type="checkbox" id="hideCheck"/>
+          <span class="toggle__track">
+            <span class="toggle__thumb"></span>
+          </span>
+        </label>
+        <span class="control-label">Hide</span>
+      </div>
+    </section>
+ 
+  </div>
+  
+  <script src="./js/progress.js"></script>
+  <script src="./js/app.js"></script>
+  
+</body>
+</html>
