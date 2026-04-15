@@ -49,7 +49,7 @@ body {
 }
  
 .progress-block--hidden {
-  visibility: hidden;
+  display: none;
 }
  
 .progress-ring {
@@ -106,7 +106,10 @@ body {
   outline: none;
 }
  
-.value-input::-webkit-outer-spin-button,
+.value-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
 .value-input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
@@ -128,7 +131,10 @@ body {
  
 .toggle__track {
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background: #dde3ee;
   border-radius: 100px;
   transition: background 0.25s ease;
